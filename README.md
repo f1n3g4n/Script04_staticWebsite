@@ -10,4 +10,4 @@ Coming soon!
 2. Move to the folder where you want to create the new project and paste it there.
 2. Give execute permissions to the file `sudo chmod +x nameScript`.
 3. Execute the script. `python3 nameScript.py` or `./nameScript.py`
-#### Enjoy, F1neg4n!
+#### Enjoy it, F1neg4n!
