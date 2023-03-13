@@ -28,22 +28,29 @@ def projectName():
 
 def createProject():
     name = projectName()
-    os.system('clear')
-    welcome()
-    print('[+] Creating new project "'+name+'"...')
-    os.system('mkdir ' + name)
-    os.chdir(name + '/')
-    os.system('mkdir static')
-    os.system('touch index.html')
-    os.chdir('static/')
-    os.system('mkdir css js img')
-    os.chdir('css/')
-    os.system('touch style.css')
-    os.chdir('../')
-    os.chdir('js/')
-    os.system('touch index.js')
-    print('[+] Done!')
+    if(os.path.exists(name) == True):
+        os.system('clear')
+        welcome()
+        print('[-] The project name has taken!')
+        exit()
+    else:
+        os.system('clear')
+        welcome()
+        print('[+] Creating new project "'+name+'"...')
+        os.system('mkdir ' + name)
+        os.chdir(name + '/')
+        os.system('mkdir static')
+        os.system('touch index.html')
+        os.chdir('static/')
+        os.system('mkdir css js img')
+        os.chdir('css/')
+        os.system('touch style.css')
+        os.chdir('../')
+        os.chdir('js/')
+        os.system('touch index.js')
+        print('[+] Done!')
     return
+
 
 if __name__ == '__main__':
     createProject()
