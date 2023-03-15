@@ -1,16 +1,14 @@
 #!/usr/bin/python3
-# Script by F1neg4n
+# Created by F1neg4n
 
 import os
 
-
 def welcome():
-    welc = 'Static Website'
-    info = '[INFO] Python script to create base for static website'
+    welc = 'SSH Connect'
+    info = '[INFO] Python script to create SSH connections'
     os.system('clear')
     print(welc + '\n' + '*' * len(welc))
-    print(info)
-    print('------------')
+    print(info + '\n' + '-' * len(info))
     return
 
 def projectName():
